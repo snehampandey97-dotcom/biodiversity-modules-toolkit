@@ -1,0 +1,11 @@
+## PETG print settings (Creality Ender-3 V3 SE, CrealityPrint)
+
+**Setup.** Ender-3 V3 SE, 0.4 mm nozzle, Textured PEI plate. Set Bed type to Textured PEI in both the slicer and the printer, then run Auto Level on the printer. I don't hand-tune Z offset: lowering it too far scratched my plate. Structural parts are printed in PETG (1.75 mm), which is tougher and more heat- and moisture-resistant than PLA. I use the Generic PETG preset, saved as a custom profile.
+
+**Temperatures and cooling.** Nozzle 250 °C first layer, 245 °C other layers (spool range 240–260 °C). Bed 70 °C (range 60–70 °C). Model fan 20% minimum to 60% maximum, no fan for the first 3 layers, and 90% for overhangs and bridges. Slowdown for layer cooling is on, with a 10 mm/s minimum speed. Flow ratio 0.95, pressure advance off. The Side Fan and Back Fan fields don't apply to this printer.
+
+**Layers and speeds.** 0.16 mm Optimal for structural parts, 0.12 mm Fine for small details such as nozzle tips, first layer 0.2 mm. Speeds (mm/s): first layer 30, first-layer infill 25 (lowered from the 80 default after base layers lifted), outer wall 40, inner wall 60, sparse and solid infill 100, top surface 50, travel 150. Acceleration (mm/s²): outer wall 1000, inner wall 2000, infill 3000, top surface 1000, first layer 500, travel 2500. Jerk is 5 mm/s (8 for first layer and travel). The profile default of 20 triggered a "exceeds printer maximum jerk" warning.
+
+**Strength and adhesion.** 3 wall loops, 6 top and 4 bottom layers, 25% cubic infill. Brim outer + inner, 5–8 mm with a 0.1 mm gap, for thin or complex parts. Retraction 0.8 mm at 30 mm/s with a 0.4 mm Z-hop (slope). Thick bridges on.
+
+**Lessons learned.** Most failures were adhesion, not extrusion: wrong bed type, over-adjusted Z offset, and large solid first layers printed too fast. Watch the first 15 minutes of every print, and check the slicer's overhang stats before adding supports.
