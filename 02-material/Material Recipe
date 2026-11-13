@@ -1,2 +1,186 @@
-Eggshell Recipe
-Spent Coffee Ground Recipe
+# Material Recipes and Fabrication Process
+
+The fabrication process involved developing two bio-based material composites using locally available waste materials: eggshells and spent coffee grounds (SCGs). The recipes were adapted from [Materiom](https://www.materiom.org/), an open-access database supporting bio-based material innovation.
+
+The process combined digital fabrication, material experimentation and locally sourced ingredients to produce modular, bioreceptive prototypes.
+
+## 1. Design and Preparation
+
+The first stage involved identifying the materials, planning their procurement and preparing the digital design files.
+
+A branching growth simulation pattern was selected for the installation. The pattern was generated using a Grasshopper script, with the simulation constrained within the desired boundary dimensions. The resulting geometry was transferred to Rhino, where a base and walls were added to create the mould geometry.
+
+Initial material recipe tests, mould trials and shrinkage tests were conducted to determine the dimensional adjustments required for fabrication. These tests indicated an approximate shrinkage of 7–10% across the length, breadth and depth of the modules. The digital geometry was consequently scaled to compensate for this reduction.
+
+The individual components of the modular grid were exported as STL files and processed using Creality Print to generate the G-code files for 3D printing.
+
+## 2. Equipment and Mould Fabrication
+
+Most of the equipment required for material preparation was sourced locally in Bir, either from the home kitchen or through borrowing from friends.
+
+A Creality Ender-3 V3 SE 3D printer was purchased, along with PLA and PETG filaments, to facilitate the production and testing of moulds.
+
+The relatively small scale of the mould components allowed the complete set to be printed within approximately two days.
+
+**Mould fabrication considerations:**
+- Export individual mould components as STL files.
+- Import the files into Creality Print and check their orientation and dimensions.
+- Generate G-code using the appropriate print settings for the selected filament.
+- Add an external brim of approximately 3 mm where necessary to improve bed adhesion, particularly for components with limited contact area.
+- Check the printed moulds for dimensional accuracy, surface irregularities and ease of material release.
+
+## 3. Material Collection and Preparation
+
+The eggshells and spent coffee grounds were collected from a local café in Bir. Both materials were cleaned and prepared before being incorporated into the composite mixtures.
+
+### Common ingredients and equipment
+
+**Ingredients**
+- Waste eggshells
+- Spent coffee grounds (SCGs)
+- Fine sawdust
+- Sodium alginate
+- Glycerol
+- Calcium chloride
+- Water
+
+**Equipment**
+- Kitchen weighing scale
+- Mixing bowls and containers
+- Sieve
+- Blender or grinder
+- Oven
+- Stove or heating equipment
+- Spatulas and mixing utensils
+- Spray bottle
+- 3D-printed moulds
+- Drying and storage trays
+
+## 4. Prototype A – Eggshell Composite
+
+**Material:** Eggshell powder and sodium alginate
+
+**Reference recipe:** [Materiom – Eggshell](https://commons.materiom.org/materials-database/recipe/649c36218e0f06dcab0b7d04)
+
+### Ingredients
+
+- Cleaned and powdered eggshells
+- 2% sodium alginate solution
+- 10% calcium chloride solution
+
+### Material preparation
+
+1. Collect eggshells and remove any residual egg white or membrane.
+2. Wash the shells thoroughly.
+3. Boil the shells to clean and sanitise them.
+4. Allow the shells to dry completely.
+5. Crush the dried shells into a fine powder.
+6. Sieve the powder to remove larger particles and achieve a relatively uniform grain size.
+
+### Preparation of sodium alginate solution
+
+1. Prepare a 2% sodium alginate solution by dissolving 2 g of sodium alginate in 98 g of water.
+2. Mix thoroughly to avoid lumps.
+3. Allow the solution to hydrate until it reaches a uniform consistency.
+
+### Mixing and casting
+
+1. Weigh the prepared eggshell powder.
+2. Add the sodium alginate solution gradually, mixing until a cohesive, mouldable paste is obtained.
+3. The initial material trials explored 20 g of eggshell powder with 8–12 g of 2% sodium alginate solution. A middle trial of 20 g eggshell powder to 10 g alginate solution was used as a starting formulation.
+4. Transfer the mixture into the 3D-printed mould.
+5. Press the material into the mould, ensuring that the branching geometry, corners and smaller details are filled without trapping air.
+6. Level the exposed surface.
+
+### Calcium cross-linking
+
+1. Prepare a 10% calcium chloride solution by dissolving 10 g of calcium chloride in 100 g of water.
+2. Transfer the solution into a spray bottle.
+3. Lightly spray the exposed surface of the cast material.
+4. Allow the calcium ions to interact with the sodium alginate, initiating cross-linking and helping the material retain its shape.
+
+Calcium chloride was applied after filling the mould to avoid premature cross-linking during mixing.
+
+## 5. Prototype B – Spent Coffee Grounds Composite
+
+**Material:** Spent coffee grounds, sawdust, sodium alginate and glycerol
+
+**Reference recipe:** [Materiom – Coffee](https://commons.materiom.org/materials-database/recipe/649c36218e0f06dcab0b7d0c)
+
+### Material preparation
+
+1. Collect spent coffee grounds from a local café.
+2. Spread the grounds out to remove excess moisture.
+3. Sun-dry the grounds.
+4. Transfer the grounds to an oven and heat at approximately 200°C for 15–20 minutes, following the referenced Materiom preparation method.
+5. Allow the grounds to cool completely before mixing.
+
+Thorough drying is important because residual moisture in spent coffee grounds can encourage fungal and mould growth during storage and after fabrication.
+
+### Mixing and casting
+
+The coffee grounds were combined with sawdust, a 2% sodium alginate solution and glycerol.
+
+1. Weigh the prepared coffee grounds and sawdust.
+2. Mix the dry ingredients until they are evenly distributed.
+3. Prepare the 2% sodium alginate solution separately.
+4. Gradually incorporate the alginate solution into the dry mixture.
+5. Add glycerol as a plasticising agent to improve the flexibility and workability of the composite.
+6. Mix until a cohesive paste is achieved. The consistency should allow the material to be transferred and pressed into the mould without excessive liquid separation.
+7. Fill the 3D-printed mould, ensuring that the mixture reaches the smaller branching details and corners.
+8. Level and compact the material to minimise air pockets.
+
+The initial coffee formulation explored a coffee-to-sawdust-to-sodium-alginate-to-glycerol ratio of 1:1:1:0.2. Subsequent trials explored adjustments to the sawdust content and material consistency.
+
+*Note: The final working proportions should be documented separately once the adjusted formulation is established. The ratio should also specify whether sodium alginate refers to dry powder or prepared solution.*
+
+## 6. Casting, Drying and Demoulding
+
+Both material composites were cast into the 3D-printed moulds.
+
+The filled moulds were kept indoors, away from direct sunlight and strong airflow, in an area with relatively stable ambient temperatures. This was intended to encourage gradual and even drying and minimise cracking or deformation.
+
+The drying process involved:
+- Allowing the materials to set and lose moisture gradually.
+- Monitoring the edges and exposed surfaces for shrinkage or cracking.
+- Checking the material's rigidity before attempting demoulding.
+- Removing the modules carefully to avoid damaging the finer branching structures.
+- Allowing the demoulded modules to continue drying until they reach a stable condition.
+
+Demoulding time varied between the initial tests and final prototypes. While some initial samples could be removed within approximately one day, larger final modules required longer drying periods.
+
+## 7. Module and Installation Dimensions
+
+The final installation was designed as a modular grid contained within a timber frame.
+
+| Component | Dimensions |
+|---|---|
+| Individual module | 100 × 100 mm |
+| Module depth | 15 mm |
+| Timber grid thickness | 15 mm |
+| Outer timber frame width | 30 mm |
+| Overall frame dimensions | 350 × 350 mm |
+
+The timber frame and internal grid were incorporated into the digital design to accommodate the individual modules.
+
+## 8. Results and Fabrication Observations
+
+The final prototypes confirmed an approximate material shrinkage of 7–10% across the three dimensions. This validated the dimensional compensation incorporated into the digital mould design.
+
+The fabrication process also highlighted several considerations:
+
+- The consistency of the material mixture influences how effectively the branching geometry can be filled.
+- Fine material particles are important for reproducing smaller geometric details.
+- Gradual drying helps minimise uneven shrinkage and cracking.
+- Mould geometry, particularly curved sections and branching undercuts, influences the ease of demoulding.
+- Larger modules require longer drying periods than smaller test samples.
+
+Further iterations can investigate the optimisation of material proportions, demoulding techniques, drying conditions and the long-term durability of the composites.
+
+## 9. Materiom References
+
+The two material recipes were adapted from Materiom, an open-access resource for bio-based material research and development.
+
+- **Eggshell composite:** [Materiom – Eggshell recipe](https://commons.materiom.org/materials-database/recipe/649c36218e0f06dcab0b7d04)
+- **Coffee composite:** [Materiom – Coffee recipe](https://commons.materiom.org/materials-database/recipe/649c36218e0f06dcab0b7d0c)
+- **Materiom database:** [https://www.materiom.org](https://www.materiom.org)
